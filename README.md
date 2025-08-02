@@ -1,12 +1,11 @@
-# Andrey479.github.io
-# Olá, sou Andrey 👋
-Desenvolvedor em formação. Apaixonado por backend e sistemas críticos.
+# Olá, meu nome é Andrey 👋
+Desenvolvedor em formação. Foco em back-end Java.
 
 ## 🚀 Projetos em destaque
-- [Sistema Locadora](https://github.com/andrey/sistema-locadora)
-- [API de Livros com Spring Boot](https://github.com/andrey/api-livros)
+- [Portfólio Pessoal](https://github.com/Andrey479/repositorio/tree/master/portifolio-pessoal)
+- [Autobiografia](https://github.com/Andrey479/repositorio/tree/master/autobiografia)
 
 ## 📫 Contato
 - Email: andreyofbbrasil@gmail.com  
-- [LinkedIn](https://linkedin.com/in/seuusuario)
-- [GitHub](https://github.com/seuusuario)
+- [LinkedIn](https://www.linkedin.com/in/andrey-oliveira-9066bb222/)
+- ![Instagram](https://www.instagram.com/andrey.oli12/)
