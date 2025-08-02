@@ -8,4 +8,4 @@ Desenvolvedor em formação. Foco em back-end Java.
 ## 📫 Contato
 - Email: andreyofbbrasil@gmail.com  
 - [LinkedIn](https://www.linkedin.com/in/andrey-oliveira-9066bb222/)
-- ![Instagram](https://www.instagram.com/andrey.oli12/)
+- [Instagram](https://www.instagram.com/andrey.oli12/)
