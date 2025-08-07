@@ -21,7 +21,7 @@ Desenvolvedor em formação. Foco em back-end Java.
 ### 🔥 GitHub Streak
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Andrey479&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com/?user=Andrey479&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
