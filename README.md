@@ -2,8 +2,7 @@
 Desenvolvedor em formação. Foco em back-end Java.
 
 ## 🚀 Projetos em destaque
-- [Portfólio Pessoal](https://github.com/Andrey479/repositorio/tree/master/portifolio-pessoal)
-- [Autobiografia](https://github.com/Andrey479/repositorio/tree/master/autobiografia)
+- [Simulador de Caixa Eletrônico](https://github.com/Andrey479/java/blob/master/projetos/basicos/src/CaixaEletronico.java)
 
 ## 📫 Contato
 - Email: andreyofbbrasil@gmail.com  
