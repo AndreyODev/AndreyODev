@@ -33,22 +33,10 @@ Gosto de resolver problemas com código e estou sempre em busca de aprender mais
 
 ### 📊 Estatísticas
 
-<p>
-  <img 
-    align="left" 
-    alt="GitHub Stats" 
-    height="200" 
-    style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=andreyodev&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
-  />
+<a href="https://andreyodev.github.io/github-card/">
+  <img src="https://githubstats.com.br/api/stats?username=AndreyODev&theme=dark&showBorder=true&language=pt&type=stats" alt="GitHub Stats" width="600">
+</a>
 
-<img  
-      align="left" 
-      alt="GitHub Stats" 
-      height="200" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=andreyodev&theme=tokyonight&layout=compact&custom_title=Linguagem&langs_count=2" 
-  />
 
-</p>
-![Estatísticas do GitHub](https://githubstats.com.br/api/stats?username=AndreyODev&theme=dark&showBorder=true&language=pt&type=stats)
+
 
