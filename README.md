@@ -50,3 +50,5 @@ Gosto de resolver problemas com código e estou sempre em busca de aprender mais
   />
 
 </p>
+![Estatísticas do GitHub](https://githubstats.com.br/api/stats?username=AndreyODev&theme=dark&showBorder=true&language=pt&type=stats)
+
