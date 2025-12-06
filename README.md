@@ -11,8 +11,8 @@ Sistema console que implementa conceitos de POO (Herança, Polimorfismo, Encapsu
 ### 🌐 Site Pessoal
 Portfolio pessoal desenvolvido com HTML5 e CSS3.
 - **Tecnologias**: HTML, CSS
-- **Link**: [Ver projeto](link-do-site)
-- **Repositório**: [GitHub](link-do-repo-se-tiver)
+- **Link**: [Ver projeto](https://andrey479.github.io/index.html)
+- **Repositório**: [GitHub](https://github.com/Andrey479/Andrey479.github.io)
 
 ## 📫 Contato
 - Email: andreyofbbrasil@gmail.com  
