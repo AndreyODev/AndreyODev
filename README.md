@@ -1,13 +1,24 @@
 # Olá, meu nome é Andrey 👋
 Desenvolvedor em formação. Foco em back-end Java.
 
-## 🚀 Projetos em destaque
-- [Simulador de Caixa Eletrônico](https://github.com/Andrey479/java/blob/master/projetos/basicos/src/CaixaEletronico.java)
+## ⭐ Projetos em Destaque
+
+### 🐷 [Simulador de Cofrinho](./projetos/cofrinho)
+Sistema console que implementa conceitos de POO (Herança, Polimorfismo, Encapsulamento).
+- **Tecnologias**: Java, ArrayList
+- **Status**: ✅ Concluído
+
+### 🌐 Site Pessoal
+Portfolio pessoal desenvolvido com HTML5 e CSS3.
+- **Tecnologias**: HTML, CSS
+- **Link**: [Ver projeto](link-do-site)
+- **Repositório**: [GitHub](link-do-repo-se-tiver)
 
 ## 📫 Contato
 - Email: andreyofbbrasil@gmail.com  
-- [LinkedIn](https://www.linkedin.com/in/andrey-oliveira-9066bb222/)
-- [Instagram](https://www.instagram.com/andrey.oli12/)
+- [LinkedIn](https://www.linkedin.com/in/andrey-oliveira-software/)
+
+
 ### 📊 GitHub Stats
 
 <p align="center">
