@@ -3,7 +3,7 @@ Desenvolvedor em formação. Foco em back-end Java.
 
 ## ⭐ Projetos em Destaque
 
-### 🐷 [Simulador de Cofrinho](./projetos/cofrinho)
+### 🐷 [Simulador de Cofrinho] https://github.com/Andrey479/java/tree/master/projetos/Cofrinho
 Sistema console que implementa conceitos de POO (Herança, Polimorfismo, Encapsulamento).
 - **Tecnologias**: Java, ArrayList
 - **Status**: ✅ Concluído
