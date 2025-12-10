@@ -49,12 +49,22 @@ Minhas principais ferramentas e tecnologias que utilizo/estudarei:
 
 ## 📊 Minhas Estatísticas no GitHub
 
-<a href="https://andreyodev.github.io/github-card/">
-    <img src="https://githubstats.com.br/api/stats?username=AndreyODev&theme=light&showBorder=true&language=pt&type=stats" alt="GitHub Stats" width="600">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&theme=default" alt="Linguagens Mais Usadas"/>
+<p align="center">
+  <a href="https://andreyodev.github.io/github-card/">
+    <img 
+      src="https://githubstats.com.br/api/stats?username=AndreyODev&theme=light&showBorder=true&language=pt&type=stats" 
+      alt="GitHub Stats" 
+      width="600"
+    />
+  </a>
+</p>
 
-</a>
-
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&theme=default" 
+    alt="Linguagens Mais Usadas"
+  />
+</p>
 <!--## 📬 Fale Comigo
 
  <p align="center">
