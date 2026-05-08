@@ -45,4 +45,4 @@ Este é o meu projeto "flagship", onde documento todo o meu processo de aprendiz
 
 ### 📫 Vamos Conversar?
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrey-oliveira-software)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu-email@gmail.com)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andreyofbbrasil@gmail.com)
