@@ -51,3 +51,4 @@ Acredito que a comunicação técnica e a transparência na evolução são fund
 Estou sempre aberto a trocas de conhecimento sobre o ecossistema Java e arquitetura de sistemas.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/andrey-oliveira-software)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andreyofbbrasil@gmail.com)
