@@ -8,6 +8,7 @@ on:
     branches: ["main"]
     paths:
       - ".github/workflows/metrics.yml"
+      - "scripts/generate-linguagens.mjs"
       - "scripts/generate-trofeus.mjs"
 
 permissions:
@@ -22,65 +23,11 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Estatisticas gerais
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: assets/metrics.svg
-          template: classic
-          base: ""
-          config_timezone: America/Sao_Paulo
-          config_padding: 8%
-          config_animations: no
-
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_limit: 6
-          plugin_languages_details: percentage
-          plugin_languages_sections: most-used
-
-          extras_css: |
-            svg {
-              font-family: "Segoe UI", Helvetica, Arial, sans-serif !important;
-              background: #000000 !important;
-              color: #B8BCC2 !important;
-            }
-            svg, .background { background: #000000 !important; }
-            .background {
-              fill: #000000 !important;
-              stroke: none !important;
-            }
-            h1 {
-              color: #F2F2F3 !important;
-              fill: #F2F2F3 !important;
-              font-weight: 700 !important;
-            }
-            h2, h3, .title {
-              color: #F2F2F3 !important;
-              fill: #F2F2F3 !important;
-              font-weight: 600 !important;
-            }
-            h2 {
-              font-size: 17px !important;
-              width: fit-content !important;
-              padding-bottom: 6px !important;
-              margin: 0 0 10px 0 !important;
-              border-bottom: 2.5px solid #92732D !important;
-            }
-            h3 {
-              font-size: 13px !important;
-              color: #ADBAC7 !important;
-            }
-            text, tspan, p, span, li, td, th, .value, .field {
-              fill: #C9D1D9 !important;
-              color: #B8BCC2 !important;
-            }
-            .field svg, .octicon {
-              fill: #92732D !important;
-              color: #92732D !important;
-            }
-            .field { border-color: #1A1A1C !important; }
-            svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }
+      - name: Gerar linguagens
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_USERNAME: AndreyODev
+        run: node scripts/generate-linguagens.mjs
 
       - name: Gerar conquistas dinamicas
         env:
@@ -93,6 +40,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main
-          git add assets/trofeus.svg
-          git diff --staged --quiet || git commit -m "Update assets/trofeus.svg [Skip GitHub Action]"
+          git add assets/linguagens.svg assets/trofeus.svg
+          git diff --staged --quiet || git commit -m "Update assets/linguagens.svg e trofeus.svg [Skip GitHub Action]"
           git push

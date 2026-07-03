@@ -8,6 +8,7 @@ on:
     branches: ["main"]
     paths:
       - ".github/workflows/pacman.yml"
+      - "scripts/wrap-pacman.mjs"
 
 permissions:
   contents: write
@@ -17,13 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Gerar SVG do Pac-Man (1 ano de contribuicoes)
-        uses: abozanona/pacman-contribution-graph@main
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Gerar SVG do Pac-Man (tema escuro, 1 ano)
+        uses: DuyetBKU/viz-pacman-github-profile@main
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.METRICS_TOKEN }}
-          games: "pacman"
-          player_style: "opportunistic"
+          theme: github-dark
+          music: "false"
+
+      - name: Aplicar moldura do perfil
+        run: node scripts/wrap-pacman.mjs
 
       - name: Publicar SVG na branch output
         uses: crazy-max/ghaction-github-pages@v4
