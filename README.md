@@ -1,7 +1,7 @@
 <!--
   Perfil de Andrey Oliveira - AndreyODev
   Identidade visual: preto absoluto + acento latao. Elegante e minimalista.
-  Conteudo estatico consolidado em uma unica imagem (assets/profile.png)
+  Conteudo estatico em SVG editavel (assets/profile.svg)
   para eliminar os espacos em branco entre secoes.
 -->
 
@@ -34,13 +34,13 @@
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
+  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
   &nbsp;&nbsp;
   <img height="165" src="https://streak-stats.demolab.com/?user=AndreyODev&hide_border=true&background=000000&stroke=1E1E22&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&currStreakNum=E6EDF3&sideNums=B8BCC2" alt="Streak" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&langs_count=8" alt="Linguagens" />
+  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&langs_count=8" alt="Linguagens" />
 </p>
 
 <p align="center">
