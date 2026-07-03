@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
   push:
     branches: ["main"]
-    paths: [".github/workflows/metrics.yml"]
+    paths:
+      - ".github/workflows/metrics.yml"
+      - "scripts/generate-trofeus.mjs"
 
 permissions:
   contents: write
@@ -15,6 +17,11 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
       - name: Estatisticas gerais
         uses: lowlighter/metrics@latest
         with:
@@ -77,3 +84,18 @@ jobs:
             }
             .field { border-color: #1A1A1C !important; }
             svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }
+
+      - name: Gerar conquistas dinamicas
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_USERNAME: AndreyODev
+        run: node scripts/generate-trofeus.mjs
+
+      - name: Commit e push dos assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add assets/trofeus.svg
+          git diff --staged --quiet || git commit -m "Update assets/trofeus.svg [Skip GitHub Action]"
+          git push

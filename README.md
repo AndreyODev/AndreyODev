@@ -2,7 +2,7 @@
   Perfil de Andrey Oliveira - AndreyODev
   Identidade visual: preto absoluto (#000000) + card (#0A0A0B) + acento latao (#92732D).
   Conteudo estatico editavel: profile.svg, trofeus.svg e contato.svg.
-  Indicadores dinamicos: metrics.svg (gerado automaticamente pelo GitHub Action).
+  Indicadores dinamicos: metrics.svg e trofeus.svg (gerados automaticamente pelo GitHub Action).
 -->
 
 <div align="center">
