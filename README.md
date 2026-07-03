@@ -1,11 +1,11 @@
 <!--
   Perfil de Andrey Oliveira — AndreyODev
   Identidade visual: Estúdio de Engenharia — grafite + latão, estilo editorial.
-  Cores via SVG (GitHub remove bgcolor e font color em HTML).
+  Imagens em PNG (SVG não renderiza de forma confiável no README do GitHub).
 -->
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/banner.svg" alt="Andrey Oliveira — Desenvolvedor Full Stack Jr." width="100%" />
+  <img src="./assets/banner.png" alt="Andrey Oliveira — Desenvolvedor Full Stack Jr." width="100%" />
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-sobre.svg" alt="Sobre" />
+<img src="./assets/header-sobre.png" alt="Sobre" width="100%" />
 
 Desenvolvedor **Full Stack Jr.** com **8 meses** de estudo dedicado, em transição estratégica para **Backend com Java e Spring Boot**. Construo aplicações web completas — da interface ao banco de dados — com foco em código legível, APIs bem estruturadas e aprendizado contínuo.
 
@@ -32,39 +32,39 @@ Busco **estágio ou vaga júnior** onde possa contribuir com entusiasmo e evolui
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/focus.svg" alt="Foco atual: Java e Spring Boot" width="100%" />
+<img src="./assets/focus.png" alt="Foco atual: Java e Spring Boot" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/divider.svg" alt="" width="100%" />
+<img src="./assets/divider.png" alt="" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-trajetoria.svg" alt="Trajetória" />
+<img src="./assets/header-trajetoria.png" alt="Trajetória" width="100%" />
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/timeline.svg" alt="Trajetória: Fundamentos → Front-end → Back-end → Java & Spring Boot" width="100%" />
+  <img src="./assets/timeline.png" alt="Trajetória: Fundamentos → Front-end → Back-end → Java & Spring Boot" width="100%" />
 </p>
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/divider.svg" alt="" width="100%" />
+<img src="./assets/divider.png" alt="" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-stack.svg" alt="Stack" />
+<img src="./assets/header-stack.png" alt="Stack" width="100%" />
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/stack.svg" alt="Stack técnica: Backend, Frontend, Dados e Ferramentas" width="100%" />
+  <img src="./assets/stack.png" alt="Stack técnica: Backend, Frontend, Dados e Ferramentas" width="100%" />
 </p>
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/divider.svg" alt="" width="100%" />
+<img src="./assets/divider.png" alt="" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-projetos.svg" alt="Projetos" />
+<img src="./assets/header-projetos.png" alt="Projetos" width="100%" />
 
 Projetos que demonstram minha evolução técnica — APIs REST, banco de dados e containerização.
 
@@ -80,11 +80,11 @@ Projetos que demonstram minha evolução técnica — APIs REST, banco de dados 
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/divider.svg" alt="" width="100%" />
+<img src="./assets/divider.png" alt="" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-atividade.svg" alt="Atividade" />
+<img src="./assets/header-atividade.png" alt="Atividade" width="100%" />
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_radius=10" alt="Estatísticas do GitHub" />
@@ -98,11 +98,11 @@ Projetos que demonstram minha evolução técnica — APIs REST, banco de dados 
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/divider.svg" alt="" width="100%" />
+<img src="./assets/divider.png" alt="" width="100%" />
 
 <br />
 
-<img src="https://cdn.jsdelivr.net/gh/AndreyODev/AndreyODev@main/assets/header-contato.svg" alt="Contato" />
+<img src="./assets/header-contato.png" alt="Contato" width="100%" />
 
 <p align="center">
   <i>Aberto a conversas sobre oportunidades, projetos e troca de conhecimento.</i>

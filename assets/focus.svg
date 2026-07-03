@@ -11,5 +11,5 @@
 
   <text x="32" y="36" font-family="'SFMono-Regular', 'Consolas', monospace" font-size="11" letter-spacing="4" fill="#8B949E">AGORA</text>
   <text x="32" y="68" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#E6EDF3">Aprofundando Java &amp; Spring Boot para backend</text>
-  <text x="32" y="96" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8B949E">APIs REST &nbsp;&#183;&nbsp; Arquitetura em camadas &nbsp;&#183;&nbsp; Testes &nbsp;&#183;&nbsp; Boas práticas</text>
+  <text x="32" y="96" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8B949E">APIs REST   ·   Arquitetura em camadas   ·   Testes   ·   Boas práticas</text>
 </svg>

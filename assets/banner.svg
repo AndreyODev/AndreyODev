@@ -37,7 +37,7 @@
 
   <line x1="72" y1="172" x2="480" y2="172" stroke="url(#brass)" stroke-width="3" stroke-linecap="round"/>
 
-  <text x="72" y="212" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#ADBAC7">Full Stack Jr. &nbsp;&#183;&nbsp; Transição para Backend Java</text>
+  <text x="72" y="212" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#ADBAC7">Full Stack Jr.   ·   Transição para Backend Java</text>
 
   <g transform="translate(72, 236)">
     <rect x="0" y="0" width="148" height="32" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1"/>

@@ -1,0 +1,12 @@
+{
+  "name": "readme-github",
+  "version": "1.0.0",
+  "description": "<!--\r   Perfil de Andrey Oliveira — AndreyODev\r   Identidade visual: Estúdio de Engenharia — grafite + latão, estilo editorial.\r   Cores via SVG (GitHub remove bgcolor e font color em HTML).\r -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
