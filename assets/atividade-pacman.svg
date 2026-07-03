@@ -1,14 +1,14 @@
-<svg width="1200" height="359" viewBox="0 0 1200 359" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="359" fill="#000000"/>
-  <rect x="24" y="24" width="1152" height="311" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
+<svg width="1200" height="406" viewBox="0 0 1200 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="406" fill="#000000"/>
+  <rect x="24" y="24" width="1152" height="358" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
   <path d="M44 40 H70 M44 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
   <path d="M1156 40 H1130 M1156 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <path d="M44 319.37907375643226 H70 M44 319.37907375643226 V293.37907375643226" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <path d="M1156 319.37907375643226 H1130 M1156 319.37907375643226 V293.37907375643226" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <text x="64" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Atividade</text>
-  <line x1="64" y1="84" x2="176" y2="84" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Ultimo ano de contribuicoes no GitHub.</text>
-  <g transform="translate(64.00 142.00) scale(0.8988)">
+  <path d="M44 390 H70 M44 390 V364" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1156 390 H1130 M1156 390 V364" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+  <text x="64" y="102" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Atividade</text>
+  <line x1="64" y1="114" x2="176" y2="114" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="64" y="142" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#6E7076" font-style="italic">Contribuicoes em 2026 no GitHub.</text>
+  <svg x="64" y="176" width="1048" height="166" viewBox="0 0 1166 184" fill="none" xmlns="http://www.w3.org/2000/svg">
     <desc>Generated with pacman-contribution-graph on Fri Jul 03 2026 16:29:26 GMT+0000 (Coordinated Universal Time)</desc><metadata>
 		<info>
 			<frames>778</frames>
@@ -16,7 +16,7 @@
 			<durationMs>155600</durationMs>
 			<generatedOn>2026-07-03T16:29:26.571Z</generatedOn>
 		</info>
-	</metadata><rect width="100%" height="100%" fill="#0d1117"/><defs>
+	</metadata><defs>
                 <symbol id="ghost-blinky-up" viewBox="0 0 20 20">
                     <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABiklEQVR4nIXSO2sVURQF4G8mMwa8QU2KxFcjCoIgacR/oCBYCP4fsTEIBkWwEK21UAQLIdjYaKEiJIXBXhNBCFaSeDP3zLa4mdyj5rHgwNmPtffZ62z+Q4miKHlWs3yALwUvKYphbC8UjDN3nIUB/SCCSDRnWKiZVxTFrvxp5kMRHbEltaTODuIED3YkT3FnUy+uS815qQkzMSJOxAWpuSo1A72Y4f5f5DFuBpE+vmsmZ9ukF9Eu/xwV+Pw1TEYcOtum9GmxCaLmdl7jeRDp968mcnQFMqS02bSkMV5tS36UBL6t7ixO6o/uK6sKymM0Q9l5NKC/Ldb3lWGrqenRCw73hr61H9viDujjKbztnLnae50uF4sl1nf91/2xvt9q7YuyEwKCNg+2DFoGue/fnHLoGwbyZQ/akqqkykkFZW6XmNy6VJdYyhPP8eE07/PCl1kqqbbMI3BrjY1rvMH4SW4kmou86Eac5UmiOcUcxq/wep2NirugYh4TXfOah6izUauax5leB2vuwR+e2vAshd8i9AAAAABJRU5ErkJggg==" width="20" height="20"/>
                 </symbol>
@@ -2050,5 +2050,5 @@
 					keyTimes="0.0000;0.0257;0.0450;0.1055;0.1326;0.2033;0.2227;0.3629;0.3822;1.0000"
 					values="hidden;visible;hidden;visible;hidden;visible;hidden;visible;hidden;hidden" />
 			</use></g>
-  </g>
+  </svg>
 </svg>
