@@ -2,7 +2,7 @@
   Perfil de Andrey Oliveira - AndreyODev
   Identidade visual: preto absoluto (#000000) + card (#0A0A0B) + acento latao (#92732D).
   Conteudo estatico editavel: profile.svg, trofeus.svg e contato.svg.
-  Indicadores dinamicos: metrics.svg e trofeus.svg (gerados automaticamente pelo GitHub Action).
+  Indicadores dinamicos: linguagens.svg, Pac-Man e trofeus.svg (gerados automaticamente pelo GitHub Action).
 -->
 
 <div align="center">
@@ -10,15 +10,11 @@
 <!-- HERO -->
 <img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
 
-<!-- METRICAS: linguagens (gerado pelo GitHub Action) -->
-<img src="./assets/metrics.svg" width="100%" alt="Linguagens mais utilizadas" />
+<!-- LINGUAGENS (gerado pelo GitHub Action) -->
+<img src="./assets/linguagens.svg" width="100%" alt="Linguagens mais utilizadas" />
 
-<!-- ATIVIDADE: Pac-Man come 1 ano de contribuicoes (gerado pelo workflow pacman.yml na branch output) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph.svg" />
-  <img src="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes do ultimo ano" />
-</picture>
+<!-- ATIVIDADE: Pac-Man com moldura escura (gerado pelo workflow pacman.yml na branch output) -->
+<img src="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes do ultimo ano" />
 
 <!-- CONQUISTAS -->
 <img src="./assets/trofeus.svg" width="100%" alt="Conquistas" />
