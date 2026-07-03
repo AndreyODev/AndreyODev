@@ -1,0 +1,168 @@
+<svg width="1200" height="1420" viewBox="0 0 1200 1420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E3B341"/>
+      <stop offset="1" stop-color="#B07E23"/>
+    </linearGradient>
+    <linearGradient id="brassLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E3B341"/>
+      <stop offset="1" stop-color="#E3B341" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="timeLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2A2A2E"/>
+      <stop offset="0.72" stop-color="#E3B341"/>
+      <stop offset="1" stop-color="#E3B341"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fundo geral: preto absoluto -->
+  <rect width="1200" height="1420" fill="#000000"/>
+
+  <!-- ===================== IDENTIDADE ===================== -->
+  <g>
+    <rect x="24" y="24" width="1152" height="252" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
+    <!-- cantos editoriais -->
+    <path d="M44 40 H70 M44 40 V66" stroke="#8A6D2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1156 40 H1130 M1156 40 V66" stroke="#8A6D2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M44 260 H70 M44 260 V234" stroke="#8A6D2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1156 260 H1130 M1156 260 V234" stroke="#8A6D2A" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="64" y="94" font-family="SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="6" fill="#6E7076">DESENVOLVEDOR  /  BACKEND</text>
+    <text x="60" y="156" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#F2F2F3">Andrey Oliveira</text>
+    <text x="64" y="196" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#B8BCC2">Transicao para Java &amp; Spring Boot</text>
+
+    <!-- pill disponivel -->
+    <rect x="64" y="216" width="248" height="30" rx="15" fill="#0C130C" stroke="#1D2B1D" stroke-width="1"/>
+    <circle cx="82" cy="231" r="4" fill="#3FB950"/>
+    <text x="96" y="235" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#7EE787">disponivel para oportunidades</text>
+
+    <!-- janela de codigo (identidade codando) -->
+    <g transform="translate(792, 62)">
+      <rect width="344" height="176" rx="10" fill="#060607" stroke="#1E1E22" stroke-width="1.5"/>
+      <rect width="344" height="30" rx="10" fill="#0D0D0F"/>
+      <rect y="18" width="344" height="12" fill="#0D0D0F"/>
+      <circle cx="20" cy="15" r="4.5" fill="#3A2626"/>
+      <circle cx="38" cy="15" r="4.5" fill="#3A3526"/>
+      <circle cx="56" cy="15" r="4.5" fill="#26332A"/>
+      <text x="300" y="19" font-family="SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1" fill="#4A4C52">dev.java</text>
+      <g font-family="SFMono-Regular, Consolas, monospace" font-size="13">
+        <text x="20" y="62"><tspan fill="#E3B341">class</tspan><tspan fill="#C9D1D9"> Dev {</tspan></text>
+        <text x="20" y="86"><tspan fill="#8B949E">  String</tspan><tspan fill="#C9D1D9"> foco = </tspan><tspan fill="#7EE787">"Backend"</tspan><tspan fill="#6E7076">;</tspan></text>
+        <text x="20" y="110"><tspan fill="#8B949E">  String</tspan><tspan fill="#C9D1D9"> stack = </tspan><tspan fill="#7EE787">"Java"</tspan><tspan fill="#6E7076">;</tspan></text>
+        <text x="20" y="134"><tspan fill="#8B949E">  boolean</tspan><tspan fill="#C9D1D9"> aprendendo = </tspan><tspan fill="#E3B341">true</tspan><tspan fill="#6E7076">;</tspan></text>
+        <text x="20" y="158"><tspan fill="#C9D1D9">}</tspan></text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===================== SOBRE ===================== -->
+  <g transform="translate(0, 300)">
+    <text x="64" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Sobre</text>
+    <line x1="64" y1="64" x2="132" y2="64" stroke="#E3B341" stroke-width="2.5" stroke-linecap="round"/>
+
+    <text x="64" y="112" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#B8BCC2"><tspan font-weight="700" fill="#F2F2F3">8 meses</tspan> de experiencia com programacao. Comecei no front-end e hoje foco no <tspan font-weight="700" fill="#F2F2F3">backend com Java</tspan>.</text>
+    <text x="64" y="146" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#B8BCC2">Ja trabalhei com bancos de dados relacionais (<tspan font-weight="700" fill="#F2F2F3">PostgreSQL</tspan>) e nao relacionais (<tspan font-weight="700" fill="#F2F2F3">MongoDB</tspan>), <tspan font-weight="700" fill="#F2F2F3">APIs REST</tspan></text>
+    <text x="64" y="176" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#B8BCC2">e containerizacao com <tspan font-weight="700" fill="#F2F2F3">Docker</tspan>, alem de validacao e middleware em projetos <tspan font-weight="700" fill="#F2F2F3">Node.js / Express</tspan>.</text>
+    <text x="64" y="216" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#B8BCC2">Atualmente aprofundando <tspan font-weight="700" fill="#F2F2F3">Java</tspan> e <tspan font-weight="700" fill="#F2F2F3">Spring Boot</tspan>, uma stack solida e amplamente usada no mercado.</text>
+    <text x="64" y="246" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15.5" fill="#B8BCC2">Busco <tspan font-weight="700" fill="#F2F2F3">estagio ou vaga junior</tspan> em backend ou full stack - aberto a projetos e experiencia real.</text>
+  </g>
+
+  <!-- ===================== FOCO ATUAL ===================== -->
+  <g transform="translate(0, 600)">
+    <rect x="24" y="20" width="1152" height="122" rx="12" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
+    <rect x="24" y="20" width="4" height="122" rx="2" fill="url(#brass)"/>
+    <text x="52" y="56" font-family="SFMono-Regular, Consolas, monospace" font-size="11" letter-spacing="4" fill="#6E7076">AGORA</text>
+    <text x="52" y="90" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Iniciando Java para backend  /  Ingles tecnico</text>
+    <text x="52" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#6E7076">Fundamentos OO   /   Logica com Java   /   Vocabulario tecnico   /   Algoritmos</text>
+  </g>
+
+  <!-- ===================== TRAJETORIA ===================== -->
+  <g transform="translate(0, 770)">
+    <text x="64" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Trajetoria</text>
+    <line x1="64" y1="64" x2="186" y2="64" stroke="#E3B341" stroke-width="2.5" stroke-linecap="round"/>
+
+    <line x1="120" y1="170" x2="1080" y2="170" stroke="url(#timeLine)" stroke-width="2"/>
+
+    <circle cx="150" cy="170" r="8" fill="#000000" stroke="#2A2A2E" stroke-width="2"/>
+    <circle cx="150" cy="170" r="3.5" fill="#6E7076"/>
+    <text x="150" y="135" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#B8BCC2">Fundamentos</text>
+    <text x="150" y="206" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">HTML / CSS / JS</text>
+
+    <circle cx="450" cy="170" r="8" fill="#000000" stroke="#2A2A2E" stroke-width="2"/>
+    <circle cx="450" cy="170" r="3.5" fill="#6E7076"/>
+    <text x="450" y="135" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#B8BCC2">Front-end</text>
+    <text x="450" y="206" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">React / Tailwind</text>
+
+    <circle cx="750" cy="170" r="8" fill="#000000" stroke="#2A2A2E" stroke-width="2"/>
+    <circle cx="750" cy="170" r="3.5" fill="#6E7076"/>
+    <text x="750" y="135" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#B8BCC2">Back-end</text>
+    <text x="750" y="206" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">Node / Express / APIs</text>
+
+    <circle cx="1050" cy="170" r="10" fill="#000000" stroke="#E3B341" stroke-width="2.5"/>
+    <circle cx="1050" cy="170" r="4.5" fill="#E3B341"/>
+    <text x="1050" y="133" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#E3B341">Agora</text>
+    <text x="1050" y="206" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#C9D1D9">Java / Spring Boot</text>
+  </g>
+
+  <!-- ===================== STACK ===================== -->
+  <g transform="translate(0, 1020)">
+    <text x="64" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Stack</text>
+    <line x1="64" y1="64" x2="132" y2="64" stroke="#E3B341" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Card 1: BACKEND -->
+    <g transform="translate(24, 88)">
+      <rect width="270" height="296" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+      <rect width="270" height="3" rx="1.5" fill="url(#brass)"/>
+      <text x="20" y="40" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#E3B341">BACKEND</text>
+      <text x="20" y="62" font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#6E7076">foco principal</text>
+      <circle cx="26" cy="100" r="3" fill="#E3B341"/>
+      <text x="42" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#F2F2F3">Java</text>
+      <circle cx="26" cy="140" r="3" fill="#E3B341"/>
+      <text x="42" y="145" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#F2F2F3">Spring Boot</text>
+      <circle cx="26" cy="180" r="3" fill="#6E7076"/>
+      <text x="42" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">REST APIs</text>
+      <circle cx="26" cy="220" r="3" fill="#6E7076"/>
+      <text x="42" y="225" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Node.js / Express</text>
+    </g>
+
+    <!-- Card 2: FRONTEND -->
+    <g transform="translate(318, 88)">
+      <rect width="270" height="296" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+      <rect width="270" height="3" rx="1.5" fill="#5B5B60"/>
+      <text x="20" y="40" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="3" fill="#ADBAC7">FRONTEND</text>
+      <text x="20" y="62" font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#6E7076">fundamentos solidos</text>
+      <circle cx="26" cy="100" r="3" fill="#6E7076"/>
+      <text x="42" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">React</text>
+      <circle cx="26" cy="140" r="3" fill="#6E7076"/>
+      <text x="42" y="145" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Tailwind CSS</text>
+      <circle cx="26" cy="180" r="3" fill="#6E7076"/>
+      <text x="42" y="185" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">JavaScript</text>
+      <circle cx="26" cy="220" r="3" fill="#6E7076"/>
+      <text x="42" y="225" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">HTML5 / CSS3</text>
+    </g>
+
+    <!-- Card 3: BANCO DE DADOS -->
+    <g transform="translate(612, 88)">
+      <rect width="270" height="296" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+      <rect width="270" height="3" rx="1.5" fill="#5B5B60"/>
+      <text x="20" y="40" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#ADBAC7">BANCO DE DADOS</text>
+      <text x="20" y="62" font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#6E7076">persistencia</text>
+      <circle cx="26" cy="100" r="3" fill="#6E7076"/>
+      <text x="42" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">PostgreSQL</text>
+      <circle cx="26" cy="140" r="3" fill="#6E7076"/>
+      <text x="42" y="145" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">MongoDB</text>
+    </g>
+
+    <!-- Card 4: FERRAMENTAS -->
+    <g transform="translate(906, 88)">
+      <rect width="270" height="296" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+      <rect width="270" height="3" rx="1.5" fill="#5B5B60"/>
+      <text x="20" y="40" font-family="SFMono-Regular, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#ADBAC7">FERRAMENTAS</text>
+      <text x="20" y="62" font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#6E7076">infra e versionamento</text>
+      <circle cx="26" cy="100" r="3" fill="#6E7076"/>
+      <text x="42" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Docker</text>
+      <circle cx="26" cy="140" r="3" fill="#6E7076"/>
+      <text x="42" y="145" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Git / GitHub</text>
+    </g>
+  </g>
+</svg>
