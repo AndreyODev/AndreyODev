@@ -38,14 +38,28 @@
 <img src="./assets/divider.png" width="100%" alt="" />
 <img src="./assets/section-atividade.png" width="100%" alt="Atividade" />
 
+<!-- Troféus -->
 <p align="center">
-  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341" alt="Estatisticas" />
+  <img src="https://github-profile-trophy.vercel.app/?username=AndreyODev&theme=darkhub&no-frame=true&no-bg=true&column=6&margin-w=6&margin-h=6" alt="Trofeus GitHub" />
+</p>
+
+<!-- Estatísticas + Streak -->
+<p align="center">
+  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
   &nbsp;&nbsp;
   <img height="165" src="https://streak-stats.demolab.com/?user=AndreyODev&hide_border=true&background=0D1117&stroke=21262D&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681" alt="Streak" />
 </p>
 
+<!-- Linguagens -->
 <p align="center">
-  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&langs_count=6" alt="Linguagens" />
+  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&langs_count=8" alt="Linguagens" />
+  &nbsp;&nbsp;
+  <img height="165" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/wakatime?username=AndreyODev&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&layout=compact" alt="WakaTime" />
+</p>
+
+<!-- Gráfico de Contribuições -->
+<p align="center">
+  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=AndreyODev&bg_color=0D1117&color=8B949E&line=E3B341&point=E6EDF3&area=true&area_color=E3B34122&hide_border=true" alt="Grafico de Atividade" />
 </p>
 
 <img src="./assets/divider.png" width="100%" alt="" />
