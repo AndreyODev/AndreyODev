@@ -10,8 +10,15 @@
 <!-- HERO -->
 <img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
 
-<!-- METRICAS: linguagens + calendario 3D (gerado pelo GitHub Action) -->
-<img src="./assets/metrics.svg" width="100%" alt="Linguagens e calendario de contribuicoes" />
+<!-- METRICAS: linguagens (gerado pelo GitHub Action) -->
+<img src="./assets/metrics.svg" width="100%" alt="Linguagens mais utilizadas" />
+
+<!-- ATIVIDADE: Pac-Man come 1 ano de contribuicoes (gerado pelo workflow pacman.yml na branch output) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph.svg" />
+  <img src="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes do ultimo ano" />
+</picture>
 
 <!-- CONQUISTAS -->
 <img src="./assets/trofeus.svg" width="100%" alt="Conquistas" />
