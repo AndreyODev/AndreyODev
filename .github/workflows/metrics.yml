@@ -1,0 +1,48 @@
+name: Metrics
+
+on:
+  # Atualiza todo dia as 06:00 UTC (03:00 no horario de Brasilia)
+  schedule:
+    - cron: "0 6 * * *"
+  # Permite rodar manualmente na aba Actions
+  workflow_dispatch:
+  # Roda tambem quando o workflow for alterado
+  push:
+    branches: ["main"]
+    paths: [".github/workflows/metrics.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Estatisticas gerais
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: assets/metrics.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: America/Sao_Paulo
+
+          # Linguagens mais usadas
+          plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+          plugin_languages_sections: most-used
+
+          # Calendario de contribuicoes em 3D (elegante)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Fundo preto + identidade visual (latao/dourado)
+          extras_css: >
+            :root { --fgColor-default: #B8BCC2; }
+            svg, .background { background: #000000 !important; }
+            .background { fill: #000000 !important; stroke: #1E1E22 !important; stroke-width: 1.5 !important; rx: 14 !important; }
+            h2, .title, .field { color: #E3B341 !important; fill: #E3B341 !important; }
+            text, tspan, .value, td, th, p, span { fill: #B8BCC2 !important; color: #B8BCC2 !important; }
+            .no-icon, .octicon { color: #E3B341 !important; fill: #E3B341 !important; }
