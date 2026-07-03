@@ -10,8 +10,8 @@
 <!-- HERO -->
 <img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
 
-<!-- ATIVIDADE (metrics.svg gerado pelo GitHub Action) -->
-<img src="./assets/metrics.svg" width="100%" alt="Estatisticas e indicadores" />
+<!-- METRICAS: linguagens + calendario 3D (gerado pelo GitHub Action) -->
+<img src="./assets/metrics.svg" width="100%" alt="Linguagens e calendario de contribuicoes" />
 
 <!-- CONQUISTAS -->
 <img src="./assets/trofeus.svg" width="100%" alt="Conquistas" />
