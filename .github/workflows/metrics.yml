@@ -21,117 +21,72 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: assets/metrics.svg
           template: classic
-          # Estatisticas (identidade + atividade + repositorios)
           base: header, activity, repositories
           config_timezone: America/Sao_Paulo
           config_padding: 8%
           config_animations: no
 
-          # Streak + calendario 3D isometrico (mantido)
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_isocalendar_duration: half-year
 
-          # Grafico de atividade (heatmap 2D)
-          plugin_calendar: yes
-          plugin_calendar_limit: 1
-
-          # Trofeus / conquistas
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-
-          # Linguagens mais usadas
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_limit: 6
           plugin_languages_details: percentage
           plugin_languages_sections: most-used
 
-          # ---- Identidade visual: preto absoluto + latao (profile / contato) ----
-          extras_css: >
+          extras_css: |
             svg {
               font-family: "Segoe UI", Helvetica, Arial, sans-serif !important;
               background: #000000 !important;
               color: #B8BCC2 !important;
             }
-
             svg, .background { background: #000000 !important; }
-
-            /* Fundo reto: preto absoluto, sem cantos arredondados nem borda */
             .background {
               fill: #000000 !important;
               stroke: none !important;
             }
-
-            /* Espacamento interno do fundo preto */
             .items-wrapper {
               padding: 20px !important;
               box-sizing: border-box !important;
             }
-
-            /* Cada secao vira um card dentro do fundo preto */
             .items-wrapper > section {
               background: #0A0A0B !important;
-              border: 1.5px solid #1E1E22 !important;
-              border-top: 3px solid #E3B341 !important;
+              border: 1.5px solid #1A1A1C !important;
+              border-top: 3px solid #92732D !important;
               border-radius: 10px !important;
               padding: 18px 20px !important;
               margin: 0 0 16px 0 !important;
               box-sizing: border-box !important;
             }
-
-            /* Nome (h1) em branco suave */
             h1 {
               color: #F2F2F3 !important;
               fill: #F2F2F3 !important;
               font-weight: 700 !important;
             }
-
-            /* Titulos das secoes */
             h2, h3, .title {
               color: #F2F2F3 !important;
               fill: #F2F2F3 !important;
               font-weight: 600 !important;
             }
-
             h2 {
               font-size: 17px !important;
               width: fit-content !important;
               padding-bottom: 6px !important;
               margin: 0 0 10px 0 !important;
-              border-bottom: 2.5px solid #E3B341 !important;
+              border-bottom: 2.5px solid #92732D !important;
             }
-
             h3 {
               font-size: 13px !important;
               color: #ADBAC7 !important;
             }
-
-            /* Texto do corpo */
             text, tspan, p, span, li, td, th, .value, .field {
               fill: #C9D1D9 !important;
               color: #B8BCC2 !important;
             }
-
-            /* Icones em latao */
             .field svg, .octicon {
-              fill: #E3B341 !important;
-              color: #E3B341 !important;
+              fill: #92732D !important;
+              color: #92732D !important;
             }
-
-            .field { border-color: #1E1E22 !important; }
-
-            /* Trilho da barra de linguagens mais escuro */
-            svg.bar rect[fill="#d1d5da"] { fill: #1E1E22 !important; }
-
-            /* Heatmap 2D em tons de latao (dark + latao) */
-            :root {
-              --color-calendar-graph-day-bg: #121214;
-              --color-calendar-graph-day-border: rgba(30, 30, 34, 0.8);
-              --color-calendar-graph-day-L1-bg: #2A2210;
-              --color-calendar-graph-day-L2-bg: #5C4A1A;
-              --color-calendar-graph-day-L3-bg: #8A6D2A;
-              --color-calendar-graph-day-L4-bg: #E3B341;
-            }
-
-            .calendar .day { outline-color: #1E1E22 !important; }
+            .field { border-color: #1A1A1C !important; }
+            svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }
