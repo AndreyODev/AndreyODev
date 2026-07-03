@@ -220,12 +220,12 @@ svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }</style>
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="296.0284990561139" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="296.0284990561139" y="0" width="117.3469916943866" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="413.3754907505005" y="0" width="37.02929255236749" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="450.404783302868" y="0" width="4.475945204915083" height="8" fill="#336790"/>
-                    <rect mask="url(#languages-bar)" x="454.8807285077831" y="0" width="2.8710868532521863" height="8" fill="#012456"/>
-                    <rect mask="url(#languages-bar)" x="457.75181536103526" y="0" width="2.248184638964772" height="8" fill="#DA5B0B"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="295.67026220277467" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="295.67026220277467" y="0" width="117.20498503898871" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="412.8752472417634" y="0" width="37.54114764663654" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="450.4163948883999" y="0" width="4.470528670591395" height="8" fill="#336790"/>
+                    <rect mask="url(#languages-bar)" x="454.8869235589913" y="0" width="2.867612427231543" height="8" fill="#012456"/>
+                    <rect mask="url(#languages-bar)" x="457.75453598622283" y="0" width="2.245464013777142" height="8" fill="#DA5B0B"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -237,7 +237,7 @@ svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }</style>
                                 Python
                             </div>
                             <small>
-                                <div>64.35%</div>
+                                <div>64.28%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -248,7 +248,7 @@ svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }</style>
                                 JavaScript
                             </div>
                             <small>
-                                <div>8.05%</div>
+                                <div>8.16%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -272,7 +272,7 @@ svg.bar rect[fill="#d1d5da"] { fill: #1A1A1C !important; }</style>
                                 TypeScript
                             </div>
                             <small>
-                                <div>25.51%</div>
+                                <div>25.48%</div>
                             </small>
                         </div>
                         <div class="field language details">
