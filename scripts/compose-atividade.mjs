@@ -30,6 +30,7 @@ function extractInnerSvg(svg) {
   return svg
     .replace(/^[\s\S]*?<svg[^>]*>/i, "")
     .replace(/<\/svg>\s*$/i, "")
+    .replace(/<rect\s+width="100%"\s+height="100%"\s+fill="#0d1117"\s*\/?>/i, "")
     .trim();
 }
 
@@ -38,30 +39,42 @@ async function main() {
   const { width, height } = parseSvgMetrics(source);
   const inner = extractInnerSvg(source);
 
+  const contributionYear = process.env.CONTRIBUTION_YEAR || "2026";
   const contentLeft = 64;
   const contentWidth = 1048;
-  const headerHeight = 118;
-  const footerPadding = 28;
-  const scale = contentWidth / width;
-  const graphHeight = height * scale;
+  const headerTop = 56;
+  const headerGap = 12;
+  const subtitleGap = 28;
+  const graphGap = 20;
+  const titleSize = 22;
+  const subtitleSize = 14;
+  const headerHeight = headerTop + titleSize + headerGap + subtitleSize + subtitleGap;
+  const footerPadding = 40;
+  const graphWidth = contentWidth;
+  const graphHeight = Math.ceil((height * graphWidth) / width);
   const graphX = contentLeft;
-  const graphY = 24 + headerHeight;
-  const cardHeight = headerHeight + graphHeight + footerPadding;
+  const graphY = 24 + headerHeight + graphGap;
+  const cardHeight = headerHeight + graphGap + graphHeight + footerPadding;
   const totalHeight = cardHeight + 48;
+  const titleY = 24 + headerTop + titleSize;
+  const lineY = titleY + headerGap;
+  const subtitleY = lineY + subtitleGap;
+  const bracketY = 24 + cardHeight + 8;
+  const bracketInnerY = 24 + cardHeight - 18;
 
-  const composed = `<svg width="1200" height="${totalHeight.toFixed(0)}" viewBox="0 0 1200 ${totalHeight.toFixed(0)}" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="${totalHeight.toFixed(0)}" fill="#000000"/>
-  <rect x="24" y="24" width="1152" height="${cardHeight.toFixed(0)}" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
+  const composed = `<svg width="1200" height="${totalHeight}" viewBox="0 0 1200 ${totalHeight}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="${totalHeight}" fill="#000000"/>
+  <rect x="24" y="24" width="1152" height="${cardHeight}" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
   <path d="M44 40 H70 M44 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
   <path d="M1156 40 H1130 M1156 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <path d="M44 ${cardHeight + 8} H70 M44 ${cardHeight + 8} V${cardHeight - 18}" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <path d="M1156 ${cardHeight + 8} H1130 M1156 ${cardHeight + 8} V${cardHeight - 18}" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
-  <text x="64" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Atividade</text>
-  <line x1="64" y1="84" x2="176" y2="84" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Ultimo ano de contribuicoes no GitHub.</text>
-  <g transform="translate(${graphX.toFixed(2)} ${graphY.toFixed(2)}) scale(${scale.toFixed(4)})">
+  <path d="M44 ${bracketY} H70 M44 ${bracketY} V${bracketInnerY}" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1156 ${bracketY} H1130 M1156 ${bracketY} V${bracketInnerY}" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+  <text x="64" y="${titleY}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="600" fill="#F2F2F3">Atividade</text>
+  <line x1="64" y1="${lineY}" x2="176" y2="${lineY}" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="64" y="${subtitleY}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="${subtitleSize}" fill="#6E7076" font-style="italic">Contribuicoes em ${contributionYear} no GitHub.</text>
+  <svg x="${graphX}" y="${graphY}" width="${graphWidth}" height="${graphHeight}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
     ${inner}
-  </g>
+  </svg>
 </svg>`;
 
   await writeFile(outputPath, composed, "utf8");

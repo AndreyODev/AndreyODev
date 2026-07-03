@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/pacman.yml"
       - "scripts/compose-atividade.mjs"
+      - "scripts/generate-pacman.mjs"
 
 permissions:
   contents: write
@@ -23,15 +24,24 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-      - name: Gerar SVG do Pac-Man (tema escuro, 1 ano)
-        uses: DuyetBKU/viz-pacman-github-profile@main
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.METRICS_TOKEN }}
-          theme: github-dark
-          music: "false"
+          node-version: "20"
+
+      - name: Instalar gerador do Pac-Man
+        run: npm install pacman-contribution-graph
+
+      - name: Gerar SVG do Pac-Man (contribuicoes de 2026)
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_USERNAME: AndreyODev
+          CONTRIBUTION_YEAR: "2026"
+        run: node scripts/generate-pacman.mjs
 
       - name: Compor SVG de atividade no padrao do perfil
+        env:
+          CONTRIBUTION_YEAR: "2026"
         run: node scripts/compose-atividade.mjs
 
       - name: Commit e push do asset

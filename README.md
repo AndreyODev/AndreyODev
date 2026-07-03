@@ -14,7 +14,7 @@
 <img src="./assets/linguagens.svg" width="100%" alt="Linguagens mais utilizadas" />
 
 <!-- ATIVIDADE: Pac-Man gerado na main em assets/atividade-pacman.svg -->
-<img src="./assets/atividade-pacman.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes do ultimo ano" />
+<img src="./assets/atividade-pacman.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes de 2026" />
 
 <!-- CONQUISTAS -->
 <img src="./assets/trofeus.svg" width="100%" alt="Conquistas" />
