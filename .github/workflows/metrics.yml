@@ -1,12 +1,9 @@
 name: Metrics
 
 on:
-  # Atualiza todo dia as 06:00 UTC (03:00 no horario de Brasilia)
   schedule:
     - cron: "0 6 * * *"
-  # Permite rodar manualmente na aba Actions
   workflow_dispatch:
-  # Roda tambem quando o workflow for alterado
   push:
     branches: ["main"]
     paths: [".github/workflows/metrics.yml"]
@@ -24,25 +21,48 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: assets/metrics.svg
           template: classic
-          base: header, activity, community, repositories, metadata
+          # Apenas o cabecalho de identidade (sem community/repositories/metadata)
+          base: header
           config_timezone: America/Sao_Paulo
+          config_padding: 10%
 
-          # Linguagens mais usadas
-          plugin_languages: yes
-          plugin_languages_ignored: html, css
-          plugin_languages_limit: 8
-          plugin_languages_details: percentage
-          plugin_languages_sections: most-used
-
-          # Calendario de contribuicoes em 3D (elegante)
+          # Calendario de contribuicoes em 3D (mostra total + streak)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Fundo preto + identidade visual (latao/dourado)
+          # Linguagens mais usadas (so as principais)
+          plugin_languages: yes
+          plugin_languages_ignored: html, css
+          plugin_languages_limit: 6
+          plugin_languages_details: percentage
+          plugin_languages_sections: most-used
+
+          # ---- Identidade visual: fundo preto, titulos brancos, latao so como detalhe ----
           extras_css: >
-            :root { --fgColor-default: #B8BCC2; }
             svg, .background { background: #000000 !important; }
-            .background { fill: #000000 !important; stroke: #1E1E22 !important; stroke-width: 1.5 !important; rx: 14 !important; }
-            h2, .title, .field { color: #E3B341 !important; fill: #E3B341 !important; }
-            text, tspan, .value, td, th, p, span { fill: #B8BCC2 !important; color: #B8BCC2 !important; }
-            .no-icon, .octicon { color: #E3B341 !important; fill: #E3B341 !important; }
+            .background {
+              fill: #000000 !important;
+              stroke: #1E1E22 !important;
+              stroke-width: 1.5 !important;
+            }
+
+            /* Titulos das secoes e nome: branco suave (antes eram amarelos) */
+            h2, .title, .header .name, .field {
+              color: #F2F2F3 !important;
+              fill: #F2F2F3 !important;
+            }
+
+            /* Texto do corpo: cinza claro legivel */
+            text, tspan, p, span, li, td, th, .value {
+              fill: #C9D1D9 !important;
+              color: #C9D1D9 !important;
+            }
+
+            /* Numeros de destaque: latao discreto */
+            .fixed-height, .octicon {
+              fill: #E3B341 !important;
+              color: #E3B341 !important;
+            }
+
+            /* Linha divisoria e bordas internas mais sutis */
+            .field, hr { border-color: #1E1E22 !important; }
