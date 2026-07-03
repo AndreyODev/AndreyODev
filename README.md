@@ -1,7 +1,7 @@
 <!--
   Perfil de Andrey Oliveira - AndreyODev
   Identidade visual: preto absoluto (#000000) + card (#0A0A0B) + acento latao (#92732D).
-  Conteudo estatico editavel: profile.svg e contato.svg.
+  Conteudo estatico editavel: profile.svg, trofeus.svg e contato.svg.
   Indicadores dinamicos: metrics.svg (gerado automaticamente pelo GitHub Action).
 -->
 
@@ -13,8 +13,8 @@
 <!-- ATIVIDADE (metrics.svg gerado pelo GitHub Action) -->
 <img src="./assets/metrics.svg" width="100%" alt="Estatisticas e indicadores" />
 
-<!-- TROFEUS -->
-<img src="https://github-profile-trophy.vercel.app/?username=AndreyODev&column=4&margin-w=8&margin-h=8&no-frame=true&title_color=92732D&text_color=B8BCC2&bg_color=0A0A0B" width="100%" alt="Trofeus" />
+<!-- CONQUISTAS -->
+<img src="./assets/trofeus.svg" width="100%" alt="Conquistas" />
 
 <!-- CONTATO -->
 <img src="./assets/contato.svg" width="100%" alt="Contato" usemap="#contato-map" />

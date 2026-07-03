@@ -27,7 +27,7 @@ jobs:
           config_animations: no
 
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
 
           plugin_languages: yes
           plugin_languages_ignored: html, css
@@ -45,19 +45,6 @@ jobs:
             .background {
               fill: #000000 !important;
               stroke: none !important;
-            }
-            .items-wrapper {
-              padding: 20px !important;
-              box-sizing: border-box !important;
-            }
-            .items-wrapper > section {
-              background: #0A0A0B !important;
-              border: 1.5px solid #1A1A1C !important;
-              border-top: 3px solid #92732D !important;
-              border-radius: 10px !important;
-              padding: 18px 20px !important;
-              margin: 0 0 16px 0 !important;
-              box-sizing: border-box !important;
             }
             h1 {
               color: #F2F2F3 !important;

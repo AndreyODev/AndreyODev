@@ -1,0 +1,80 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#92732D"/>
+      <stop offset="1" stop-color="#6B5420"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" fill="#000000"/>
+
+  <g>
+    <rect x="24" y="24" width="1152" height="272" rx="14" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1.5"/>
+    <path d="M44 40 H70 M44 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1156 40 H1130 M1156 40 V66" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M44 276 H70 M44 276 V250" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1156 276 H1130 M1156 276 V250" stroke="#92732D" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="64" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Conquistas</text>
+    <line x1="64" y1="84" x2="186" y2="84" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Marcos e numeros do perfil no GitHub.</text>
+  </g>
+
+  <g transform="translate(24, 136)">
+    <rect width="276" height="160" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+    <rect width="276" height="3" rx="1.5" fill="url(#brass)"/>
+    <g transform="translate(16, 26)">
+      <rect width="36" height="36" rx="8" fill="#121214" stroke="#2A2210" stroke-width="1"/>
+      <path d="M18 10 L22 18 L30 19 L24 25 L26 33 L18 29 L10 33 L12 25 L6 19 L14 18 Z" stroke="#92732D" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+    </g>
+    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#92732D">COMMITS</text>
+    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">contribuicoes totais</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">335+</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">evolucao constante</text>
+  </g>
+
+  <g transform="translate(316, 136)">
+    <rect width="276" height="160" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+    <rect width="276" height="3" rx="1.5" fill="#5B5B60"/>
+    <g transform="translate(16, 26)">
+      <rect width="36" height="36" rx="8" fill="#121214" stroke="#1E1E22" stroke-width="1"/>
+      <path d="M10 12 H26 V28 H10 Z M14 12 V10 C14 8 16 6 18 6 H22 C24 6 26 8 26 10 V12" stroke="#92732D" stroke-width="1.4" fill="none"/>
+      <line x1="10" y1="20" x2="26" y2="20" stroke="#92732D" stroke-width="1.2"/>
+    </g>
+    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">REPOSITORIOS</text>
+    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">projetos publicos</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">16</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">codigo aberto</text>
+  </g>
+
+  <g transform="translate(608, 136)">
+    <rect width="276" height="160" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+    <rect width="276" height="3" rx="1.5" fill="#5B5B60"/>
+    <g transform="translate(16, 26)">
+      <rect width="36" height="36" rx="8" fill="#121214" stroke="#1E1E22" stroke-width="1"/>
+      <circle cx="14" cy="18" r="5" stroke="#92732D" stroke-width="1.4" fill="none"/>
+      <path d="M20 24 L28 32" stroke="#92732D" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M24 20 L28 24 L24 28" stroke="#92732D" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">PULL REQUESTS</text>
+    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">colaboracao ativa</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">10</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">PRs abertos</text>
+  </g>
+
+  <g transform="translate(900, 136)">
+    <rect width="276" height="160" rx="10" fill="#0A0A0B" stroke="#1E1E22" stroke-width="1"/>
+    <rect width="276" height="3" rx="1.5" fill="#5B5B60"/>
+    <g transform="translate(16, 26)">
+      <rect width="36" height="36" rx="8" fill="#121214" stroke="#1E1E22" stroke-width="1"/>
+      <circle cx="18" cy="14" r="4" fill="#92732D"/>
+      <path d="M10 30 C10 24 13 20 18 20 C23 20 26 24 26 30" stroke="#92732D" stroke-width="1.4" fill="none"/>
+      <circle cx="26" cy="12" r="3" fill="#92732D"/>
+      <path d="M24 20 C27 20 29 22 29 25" stroke="#92732D" stroke-width="1.2" fill="none"/>
+    </g>
+    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">SEGUIDORES</text>
+    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">comunidade</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">11</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">devs conectados</text>
+  </g>
+</svg>
