@@ -1,71 +1,42 @@
 <!--
   Perfil de Andrey Oliveira - AndreyODev
-  Identidade visual: preto absoluto + acento latao. Elegante e minimalista.
-  Conteudo estatico em SVG editavel (assets/profile.svg)
-  para eliminar os espacos em branco entre secoes.
+  Identidade visual: preto absoluto (#000000) + acento latao (#E3B341).
+  Cards com borda #1E1E22, no mesmo estilo do hero (assets/profile.svg).
+  Faixas pretas (spacer-black.svg) ligam as secoes sem vao branco.
 -->
 
-<!-- HERO: identidade + sobre + foco + trajetoria + stack (imagem unica) -->
-<p align="center">
-  <img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
-</p>
+<div align="center">
 
-<!-- Assinatura animada (codando) -->
-<p align="center">
-  <a href="https://github.com/AndreyODev">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=E3B341&center=true&vCenter=true&width=520&lines=Backend+Developer;Java+%26+Spring+Boot;Construindo%2C+aprendendo%2C+evoluindo." alt="typing" />
-  </a>
-</p>
+<!-- HERO -->
+<img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
+<img src="./assets/spacer-black.svg" width="100%" alt="" />
 
-<!-- Links (clicaveis) -->
-<p align="center">
-  <a href="mailto:andreyoliveira72005@gmail.com"><img src="https://img.shields.io/badge/Email-E3B341?style=flat-square&logo=gmail&logoColor=000000&labelColor=0A0A0B" alt="Email" /></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/andrey-oliveira-dev/"><img src="https://img.shields.io/badge/LinkedIn-E6EDF3?style=flat-square&logo=linkedin&logoColor=000000&labelColor=0A0A0B" alt="LinkedIn" /></a>
-  &nbsp;
-  <a href="https://github.com/AndreyODev"><img src="https://img.shields.io/badge/GitHub-E6EDF3?style=flat-square&logo=github&logoColor=000000&labelColor=0A0A0B" alt="GitHub" /></a>
-</p>
+<!-- Assinatura animada -->
+<a href="https://github.com/AndreyODev"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=E3B341&center=true&vCenter=true&width=900&height=50&backgroundColor=000000&lines=Backend+Developer;Java+%26+Spring+Boot;Construindo%2C+aprendendo%2C+evoluindo." alt="typing" /></a>
 
-<!-- ===================== ATIVIDADE ===================== -->
-<h3 align="center" style="color:#EBDBB2">Atividade</h3>
+<img src="./assets/spacer-black.svg" width="100%" alt="" />
 
-<p align="center">
-  <img src="https://trofeus-github-andreyodevs-projects.vercel.app/?username=AndreyODev&theme=gruvbox&no-frame=true&column=5&margin-w=10&margin-h=10&title=Commits,Followers,PullRequest,Repositories,Experience" alt="Trofeus GitHub" />
-</p>
+<!-- Links -->
+<a href="mailto:andreyoliveira72005@gmail.com"><img src="https://img.shields.io/badge/Email-E3B341?style=flat-square&logo=gmail&logoColor=000000&labelColor=000000" alt="Email" /></a>&nbsp;<a href="https://www.linkedin.com/in/andrey-oliveira-dev/"><img src="https://img.shields.io/badge/LinkedIn-E6EDF3?style=flat-square&logo=linkedin&logoColor=000000&labelColor=000000" alt="LinkedIn" /></a>&nbsp;<a href="https://github.com/AndreyODev"><img src="https://img.shields.io/badge/GitHub-E6EDF3?style=flat-square&logo=github&logoColor=000000&labelColor=000000" alt="GitHub" /></a>
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=282828&title_color=E3B341&text_color=B8BCC2&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
-  &nbsp;&nbsp;
-  <img height="165" src="https://streak-stats.demolab.com/?user=AndreyODev&hide_border=true&background=282828&stroke=3C3836&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&currStreakNum=E6EDF3&sideNums=B8BCC2" alt="Streak" />
-</p>
+<img src="./assets/spacer-black.svg" width="100%" alt="" />
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=282828&title_color=E3B341&text_color=B8BCC2&langs_count=8" alt="Linguagens" />
-</p>
+<!-- ATIVIDADE (imagem unica gerada pelo GitHub Action - fundo preto) -->
+<img src="./assets/atividade.svg" width="100%" alt="Atividade" />
 
-<p align="center">
-  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=AndreyODev&bg_color=282828&color=B8BCC2&line=E3B341&point=E6EDF3&area=true&area_color=E3B341&hide_border=true" alt="Grafico de Atividade" />
-</p>
+<img src="./assets/metrics.svg" width="100%" alt="Estatisticas e indicadores" />
 
-<!-- ===================== CONTATO ===================== -->
-<p align="center">
-  <img src="./assets/contato.svg" width="100%" alt="Contato" />
-</p>
+<img src="./assets/spacer-black.svg" width="100%" alt="" />
 
-<p align="center">
-  <a href="mailto:andreyoliveira72005@gmail.com">
-    <img src="https://img.shields.io/badge/andreyoliveira72005@gmail.com-E3B341?style=for-the-badge&logo=gmail&logoColor=000000&labelColor=0A0A0B" alt="Email" />
-  </a>
-  <br /><br />
-  <a href="https://www.linkedin.com/in/andrey-oliveira-dev/">
-    <img src="https://img.shields.io/badge/LinkedIn-andrey--oliveira--dev-E6EDF3?style=for-the-badge&logo=linkedin&logoColor=000000&labelColor=0A0A0B" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/AndreyODev">
-    <img src="https://img.shields.io/badge/GitHub-AndreyODev-E6EDF3?style=for-the-badge&logo=github&logoColor=000000&labelColor=0A0A0B" alt="GitHub" />
-  </a>
-</p>
+<!-- CONTATO -->
+<img src="./assets/contato.svg" width="100%" alt="Contato" />
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AndreyODev&color=E3B341&style=flat-square&label=visitas&labelColor=0A0A0B" alt="Visitas" />
-</p>
+<a href="mailto:andreyoliveira72005@gmail.com"><img src="https://img.shields.io/badge/andreyoliveira72005@gmail.com-E3B341?style=for-the-badge&logo=gmail&logoColor=000000&labelColor=000000" alt="Email" /></a>
+
+<a href="https://www.linkedin.com/in/andrey-oliveira-dev/"><img src="https://img.shields.io/badge/LinkedIn-andrey--oliveira--dev-E6EDF3?style=for-the-badge&logo=linkedin&logoColor=000000&labelColor=000000" alt="LinkedIn" /></a>&nbsp;<a href="https://github.com/AndreyODev"><img src="https://img.shields.io/badge/GitHub-AndreyODev-E6EDF3?style=for-the-badge&logo=github&logoColor=000000&labelColor=000000" alt="GitHub" /></a>
+
+<img src="./assets/spacer-black.svg" width="100%" alt="" />
+
+<img src="https://komarev.com/ghpvc/?username=AndreyODev&color=E3B341&style=flat-square&label=visitas&labelColor=000000" alt="Visitas" />
+
+</div>
