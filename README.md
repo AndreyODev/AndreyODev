@@ -13,7 +13,8 @@
 <!-- LINGUAGENS (gerado pelo GitHub Action) -->
 <img src="./assets/linguagens.svg" width="100%" alt="Linguagens mais utilizadas" />
 
-<!-- ATIVIDADE: Pac-Man com moldura escura (gerado pelo workflow pacman.yml na branch output) -->
+<!-- ATIVIDADE: cabecalho local + Pac-Man raw (GitHub nao renderiza SVG aninhado em img) -->
+<img src="./assets/atividade-header.svg" width="100%" alt="Atividade no GitHub" />
 <img src="https://raw.githubusercontent.com/AndreyODev/AndreyODev/output/pacman-contribution-graph-dark.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes do ultimo ano" />
 
 <!-- CONQUISTAS -->
