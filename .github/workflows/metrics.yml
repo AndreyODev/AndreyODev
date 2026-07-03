@@ -28,7 +28,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: assets/metrics.svg
           template: classic
-          base: header, activity, repositories
+          base: ""
           config_timezone: America/Sao_Paulo
           config_padding: 8%
           config_animations: no
