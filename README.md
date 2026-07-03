@@ -30,7 +30,7 @@
 <h3 align="center" style="color:#F2F2F3">Atividade</h3>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AndreyODev&theme=matrix&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8" alt="Trofeus GitHub" />
+  <img src="https://trofeus-github-andreyodevs-projects.vercel.app/?username=AndreyODev&theme=matrix&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8" alt="Trofeus GitHub" />
 </p>
 
 <p align="center">
