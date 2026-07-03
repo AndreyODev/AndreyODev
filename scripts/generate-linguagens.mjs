@@ -98,12 +98,20 @@ function formatPercent(value) {
   return `${value.toFixed(2).replace(".", ",")}%`;
 }
 
+const CONTENT_LEFT = 64;
+const CONTENT_WIDTH = 1048;
+const COLUMNS = 2;
+
+function truncateName(name, maxLength = 22) {
+  return name.length > maxLength ? `${name.slice(0, maxLength - 1)}…` : name;
+}
+
 function buildBar(languages, barWidth) {
   let offset = 0;
   return languages
     .map((language) => {
-      const width = (language.percent / 100) * barWidth;
-      const rect = `<rect x="${offset}" y="0" width="${width}" height="10" rx="5" fill="${language.color}"/>`;
+      const width = Math.max(0, (language.percent / 100) * barWidth);
+      const rect = `<rect x="${offset.toFixed(2)}" y="0" width="${width.toFixed(2)}" height="10" rx="5" fill="${language.color}"/>`;
       offset += width;
       return rect;
     })
@@ -111,29 +119,30 @@ function buildBar(languages, barWidth) {
 }
 
 function buildLanguageRows(languages) {
-  const columns = 3;
-  const cellWidth = 360;
-  const cellHeight = 34;
+  const cellWidth = CONTENT_WIDTH / COLUMNS;
+  const cellHeight = 30;
+  const startY = 188;
 
   return languages
     .map((language, index) => {
-      const col = index % columns;
-      const row = Math.floor(index / columns);
-      const x = 64 + col * cellWidth;
-      const y = 188 + row * cellHeight;
+      const col = index % COLUMNS;
+      const row = Math.floor(index / COLUMNS);
+      const x = CONTENT_LEFT + col * cellWidth;
+      const y = startY + row * cellHeight;
+      const label = truncateName(language.name);
+      const percentX = x + cellWidth - 12;
 
       return `
   <circle cx="${x}" cy="${y - 4}" r="5" fill="${language.color}"/>
-  <text x="${x + 16}" y="${y}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#F2F2F3">${language.name}</text>
-  <text x="${x + 250}" y="${y}" font-family="SFMono-Regular, Consolas, monospace" font-size="13" fill="#92732D" text-anchor="end">${formatPercent(language.percent)}</text>`;
+  <text x="${x + 16}" y="${y}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">${label}</text>
+  <text x="${percentX}" y="${y}" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">${formatPercent(language.percent)}</text>`;
     })
     .join("");
 }
 
 function buildSvg(languages) {
-  const barWidth = 1072;
-  const rows = Math.ceil(languages.length / 3);
-  const height = 150 + rows * 34 + 40;
+  const rows = Math.ceil(languages.length / COLUMNS);
+  const height = 150 + rows * 30 + 36;
 
   return `<svg width="1200" height="${height}" viewBox="0 0 1200 ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -157,9 +166,9 @@ function buildSvg(languages) {
     <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Distribuicao por repositorios publicos.</text>
   </g>
 
-  <rect x="64" y="136" width="${barWidth}" height="10" rx="5" fill="#1A1A1C"/>
-  <g transform="translate(64, 136)">
-    ${buildBar(languages, barWidth)}
+  <rect x="${CONTENT_LEFT}" y="136" width="${CONTENT_WIDTH}" height="10" rx="5" fill="#1A1A1C"/>
+  <g transform="translate(${CONTENT_LEFT}, 136)">
+    ${buildBar(languages, CONTENT_WIDTH)}
   </g>
   ${buildLanguageRows(languages)}
 </svg>
