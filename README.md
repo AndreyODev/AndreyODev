@@ -27,24 +27,24 @@
 </p>
 
 <!-- ===================== ATIVIDADE ===================== -->
-<h3 align="center" style="color:#F2F2F3">Atividade</h3>
+<h3 align="center" style="color:#EBDBB2">Atividade</h3>
 
 <p align="center">
-  <img src="https://trofeus-github-andreyodevs-projects.vercel.app/?username=AndreyODev&theme=matrix&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8" alt="Trofeus GitHub" />
+  <img src="https://trofeus-github-andreyodevs-projects.vercel.app/?username=AndreyODev&theme=gruvbox&no-frame=true&column=5&margin-w=10&margin-h=10&title=Commits,Followers,PullRequest,Repositories,Experience" alt="Trofeus GitHub" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
+  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=282828&title_color=E3B341&text_color=B8BCC2&icon_color=E3B341&include_all_commits=true&count_private=true" alt="Estatisticas" />
   &nbsp;&nbsp;
-  <img height="165" src="https://streak-stats.demolab.com/?user=AndreyODev&hide_border=true&background=000000&stroke=1E1E22&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&currStreakNum=E6EDF3&sideNums=B8BCC2" alt="Streak" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=AndreyODev&hide_border=true&background=282828&stroke=3C3836&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&currStreakNum=E6EDF3&sideNums=B8BCC2" alt="Streak" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=000000&title_color=E3B341&text_color=B8BCC2&langs_count=8" alt="Linguagens" />
+  <img height="165" src="https://github-readme-stats-andreyodevs-projects.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=282828&title_color=E3B341&text_color=B8BCC2&langs_count=8" alt="Linguagens" />
 </p>
 
 <p align="center">
-  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=AndreyODev&bg_color=000000&color=B8BCC2&line=E3B341&point=E6EDF3&area=true&area_color=E3B341&hide_border=true" alt="Grafico de Atividade" />
+  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=AndreyODev&bg_color=282828&color=B8BCC2&line=E3B341&point=E6EDF3&area=true&area_color=E3B341&hide_border=true" alt="Grafico de Atividade" />
 </p>
 
 <!-- ===================== CONTATO ===================== -->
