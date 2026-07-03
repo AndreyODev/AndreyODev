@@ -1,0 +1,15 @@
+<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Foco atual">
+  <defs>
+    <linearGradient id="brassLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E3B341"/>
+      <stop offset="1" stop-color="#C7902B" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="120" rx="10" fill="#161B22" stroke="#21262D" stroke-width="1.5"/>
+  <rect x="0" y="0" width="4" height="120" rx="2" fill="url(#brassLine)"/>
+
+  <text x="32" y="36" font-family="'SFMono-Regular', 'Consolas', monospace" font-size="11" letter-spacing="4" fill="#8B949E">AGORA</text>
+  <text x="32" y="68" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#E6EDF3">Aprofundando Java &amp; Spring Boot para backend</text>
+  <text x="32" y="96" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#8B949E">APIs REST &nbsp;&#183;&nbsp; Arquitetura em camadas &nbsp;&#183;&nbsp; Testes &nbsp;&#183;&nbsp; Boas práticas</text>
+</svg>
