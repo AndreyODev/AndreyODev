@@ -27,11 +27,11 @@
 <br />
 
 <p align="center">
-  <a href="mailto:andreyofbbrasil@gmail.com">
+  <a href="mailto:andreyoliveira72005@gmail.com">
     <img src="https://img.shields.io/badge/Email-contato-E3B341?style=flat-square&logo=gmail&logoColor=0D1117&labelColor=21262D" alt="Email" />
   </a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/andrey-oliveira-software">
+  <a href="https://www.linkedin.com/in/andrey-oliveira-dev/">
     <img src="https://img.shields.io/badge/LinkedIn-perfil-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=21262D" alt="LinkedIn" />
   </a>
   &nbsp;
@@ -200,12 +200,12 @@ Busco <b>estágio ou vaga júnior</b> onde possa contribuir com entusiasmo e evo
 <font color="#8B949E"><i>Aberto a conversas sobre oportunidades, projetos e troca de conhecimento.</i></font>
 <br /><br />
 
-<a href="mailto:andreyofbbrasil@gmail.com">
-  <img src="https://img.shields.io/badge/andreyofbbrasil@gmail.com-E3B341?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=161B22" alt="Email" />
+<a href="mailto:andreyoliveira72005@gmail.com">
+  <img src="https://img.shields.io/badge/andreyoliveira72005@gmail.com-E3B341?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=161B22" alt="Email" />
 </a>
 <br /><br />
-<a href="https://www.linkedin.com/in/andrey-oliveira-software">
-  <img src="https://img.shields.io/badge/LinkedIn-andrey--oliveira--software-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161B22" alt="LinkedIn" />
+<a href="https://www.linkedin.com/in/andrey-oliveira-dev/">
+  <img src="https://img.shields.io/badge/LinkedIn-andrey--oliveira--dev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161B22" alt="LinkedIn" />
 </a>
 &nbsp;
 <a href="https://github.com/AndreyODev">
