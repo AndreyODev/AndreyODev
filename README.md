@@ -1,7 +1,7 @@
 <!--
   Perfil de Andrey Oliveira
   Identidade visual: Estúdio de Engenharia — grafite + latão, estilo editorial.
-  Repositório de perfil: github.com/Andrey479/Andrey479
+  Repositório de perfil: github.com/AndreyODev/AndreyODev
 -->
 
 <p align="center">
@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-perfil-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=21262D" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="https://github.com/Andrey479">
+  <a href="https://github.com/AndreyODev">
     <img src="https://img.shields.io/badge/GitHub-repositórios-8B949E?style=flat-square&logo=github&logoColor=white&labelColor=21262D" alt="GitHub" />
   </a>
 </p>
@@ -66,15 +66,15 @@ Busco **estágio ou vaga júnior** onde possa contribuir com entusiasmo e evolui
 
 <img src="./assets/header-projetos.svg" alt="Projetos" />
 
-Projetos que demonstram minha evolução técnica — do backend com Java ao desenvolvimento aplicado.
+Projetos que demonstram minha evolução técnica — APIs REST, banco de dados e containerização.
 
 <p align="center">
-  <a href="https://github.com/Andrey479/librarymanager">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Andrey479&repo=librarymanager&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_color=21262D&border_radius=10" alt="Library Manager — API REST Java Spring Boot" />
+  <a href="https://github.com/AndreyODev/sistema-gestao-materiais-construcao">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=AndreyODev&repo=sistema-gestao-materiais-construcao&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_color=21262D&border_radius=10" alt="Sistema de gestão de materiais de construção — FastAPI" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Andrey479/AlienInvasion">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=Andrey479&repo=AlienInvasion&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_color=21262D&border_radius=10" alt="Alien Invasion — jogo Python" />
+  <a href="https://github.com/AndreyODev/api-rest">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=AndreyODev&repo=api-rest&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_color=21262D&border_radius=10" alt="API REST — Python" />
   </a>
 </p>
 
@@ -87,13 +87,13 @@ Projetos que demonstram minha evolução técnica — do backend com Java ao des
 <img src="./assets/header-atividade.svg" alt="Atividade" />
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Andrey479&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_radius=10" alt="Estatísticas do GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AndreyODev&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341&border_radius=10" alt="Estatísticas do GitHub" />
   &nbsp;&nbsp;
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Andrey479&hide_border=true&background=0D1117&stroke=21262D&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&border_radius=10" alt="Sequência de contribuições" />
+  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=AndreyODev&hide_border=true&background=0D1117&stroke=21262D&ring=E3B341&fire=E3B341&currStreakLabel=E6EDF3&sideLabels=8B949E&dates=6E7681&border_radius=10" alt="Sequência de contribuições" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrey479&layout=compact&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&langs_count=6&border_radius=10" alt="Linguagens mais utilizadas" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreyODev&layout=compact&hide_border=true&bg_color=0D1117&title_color=E6EDF3&text_color=8B949E&langs_count=6&border_radius=10" alt="Linguagens mais utilizadas" />
 </p>
 
 <br />
@@ -117,13 +117,13 @@ Projetos que demonstram minha evolução técnica — do backend com Java ao des
     <img src="https://img.shields.io/badge/LinkedIn-andrey-oliveira-software-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=161B22" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="https://github.com/Andrey479">
-    <img src="https://img.shields.io/badge/GitHub-Andrey479-8B949E?style=for-the-badge&logo=github&logoColor=white&labelColor=161B22" alt="GitHub" />
+  <a href="https://github.com/AndreyODev">
+    <img src="https://img.shields.io/badge/GitHub-AndreyODev-8B949E?style=for-the-badge&logo=github&logoColor=white&labelColor=161B22" alt="GitHub" />
   </a>
 </p>
 
 <br />
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Andrey479&color=E3B341&style=flat-square&label=visitas" alt="Contador de visitas" />
+  <img src="https://komarev.com/ghpvc/?username=AndreyODev&color=E3B341&style=flat-square&label=visitas" alt="Contador de visitas" />
 </p>
