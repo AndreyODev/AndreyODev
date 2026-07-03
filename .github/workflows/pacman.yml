@@ -8,6 +8,7 @@ on:
     branches: ["main"]
     paths:
       - ".github/workflows/pacman.yml"
+      - "scripts/compose-atividade.mjs"
 
 permissions:
   contents: write
@@ -19,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Gerar SVG do Pac-Man (tema escuro, 1 ano)
         uses: DuyetBKU/viz-pacman-github-profile@main
@@ -28,10 +31,14 @@ jobs:
           theme: github-dark
           music: "false"
 
-      - name: Publicar SVG na branch output
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Compor SVG de atividade no padrao do perfil
+        run: node scripts/compose-atividade.mjs
+
+      - name: Commit e push do asset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add assets/atividade-pacman.svg
+          git diff --staged --quiet || git commit -m "Update assets/atividade-pacman.svg [Skip GitHub Action]"
+          git push
