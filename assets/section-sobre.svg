@@ -1,0 +1,9 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="220" fill="#0D1117"/>
+  <text x="48" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#E6EDF3">Sobre</text>
+  <line x1="48" y1="58" x2="120" y2="58" stroke="#E3B341" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="48" y="96" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Desenvolvedor <tspan font-weight="700" fill="#E6EDF3">Full Stack Jr.</tspan> com <tspan font-weight="700" fill="#E6EDF3">8 meses</tspan> de estudo dedicado, em transicao estrategica para <tspan font-weight="700" fill="#E6EDF3">Backend com Java e Spring Boot</tspan>.</text>
+  <text x="48" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Construo aplicacoes web completas - da interface ao banco de dados - com foco em codigo legivel,</text>
+  <text x="48" y="144" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">APIs bem estruturadas e aprendizado continuo.</text>
+  <text x="48" y="182" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#C9D1D9">Busco <tspan font-weight="700" fill="#E6EDF3">estagio ou vaga junior</tspan> onde possa contribuir com entusiasmo e evoluir junto ao time.</text>
+</svg>
