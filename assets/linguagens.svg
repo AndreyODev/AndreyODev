@@ -22,20 +22,20 @@
 
   <rect x="64" y="136" width="1048" height="10" rx="5" fill="#1A1A1C"/>
   <g transform="translate(64, 136)">
-    <rect x="0.00" y="0" width="988.51" height="10" rx="5" fill="#3572A5"/>
-    <rect x="988.51" y="0" width="25.48" height="10" rx="5" fill="#f1e05a"/>
-    <rect x="1013.99" y="0" width="13.85" height="10" rx="5" fill="#3178c6"/>
-    <rect x="1027.84" y="0" width="7.68" height="10" rx="5" fill="#DA5B0B"/>
+    <rect x="0.00" y="0" width="988.36" height="10" rx="5" fill="#3572A5"/>
+    <rect x="988.36" y="0" width="25.64" height="10" rx="5" fill="#f1e05a"/>
+    <rect x="1014.00" y="0" width="13.85" height="10" rx="5" fill="#3178c6"/>
+    <rect x="1027.85" y="0" width="7.68" height="10" rx="5" fill="#DA5B0B"/>
     <rect x="1035.52" y="0" width="6.25" height="10" rx="5" fill="#012456"/>
     <rect x="1041.77" y="0" width="2.71" height="10" rx="5" fill="#f34b7d"/>
   </g>
   
   <circle cx="64" cy="184" r="5" fill="#3572A5"/>
   <text x="80" y="188" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">Python</text>
-  <text x="576" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">94,32%</text>
+  <text x="576" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">94,31%</text>
   <circle cx="588" cy="184" r="5" fill="#f1e05a"/>
   <text x="604" y="188" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">JavaScript</text>
-  <text x="1100" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">2,43%</text>
+  <text x="1100" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">2,45%</text>
   <circle cx="64" cy="214" r="5" fill="#3178c6"/>
   <text x="80" y="218" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">TypeScript</text>
   <text x="576" y="218" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">1,32%</text>
