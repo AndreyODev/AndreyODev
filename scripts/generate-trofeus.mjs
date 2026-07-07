@@ -47,23 +47,37 @@ async function searchCount(query) {
 }
 
 async function fetchContributionTotal(login) {
+  const currentYear = new Date().getUTCFullYear();
   const overview = await graphql(
     `
-      query ($login: String!) {
+      query ($login: String!, $from: DateTime!, $to: DateTime!) {
         user(login: $login) {
-          contributionsCollection {
+          createdAt
+          contributionsCollection(from: $from, to: $to) {
             contributionYears
           }
         }
       }
     `,
-    { login },
+    {
+      login,
+      from: "2008-01-01T00:00:00.000Z",
+      to: `${currentYear + 1}-01-01T00:00:00.000Z`,
+    },
   );
 
-  const years = overview.user.contributionsCollection.contributionYears;
-  let total = 0;
+  const createdYear = new Date(overview.user.createdAt).getUTCFullYear();
+  const yearsFromApi = overview.user.contributionsCollection.contributionYears;
 
-  for (const year of years) {
+  const years = new Set(yearsFromApi);
+  for (let year = createdYear; year <= currentYear; year += 1) {
+    years.add(year);
+  }
+
+  let total = 0;
+  const breakdown = {};
+
+  for (const year of [...years].sort((a, b) => a - b)) {
     const yearData = await graphql(
       `
         query ($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -78,14 +92,18 @@ async function fetchContributionTotal(login) {
       `,
       {
         login,
-        from: `${year}-01-01T00:00:00Z`,
-        to: `${year}-12-31T23:59:59Z`,
+        from: `${year}-01-01T00:00:00.000Z`,
+        to: `${year + 1}-01-01T00:00:00.000Z`,
       },
     );
 
-    total += yearData.user.contributionsCollection.contributionCalendar.totalContributions;
+    const count =
+      yearData.user.contributionsCollection.contributionCalendar.totalContributions;
+    breakdown[year] = count;
+    total += count;
   }
 
+  console.log(`Contribuicoes por ano para ${login}:`, breakdown, `total=${total}`);
   return total;
 }
 
