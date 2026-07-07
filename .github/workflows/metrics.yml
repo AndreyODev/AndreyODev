@@ -20,13 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Gerar linguagens
         env:
@@ -44,7 +42,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add assets/linguagens.svg assets/trofeus.svg
-          git diff --staged --quiet || git commit -m "Update assets/linguagens.svg e trofeus.svg [Skip GitHub Action]"
-          git push
+          if git diff --staged --quiet; then
+            echo "Sem mudancas nos assets."
+            exit 0
+          fi
+          git commit -m "Update assets/linguagens.svg e trofeus.svg [Skip GitHub Action]"
+          git push origin HEAD:main
