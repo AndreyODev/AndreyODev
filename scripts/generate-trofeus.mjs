@@ -46,7 +46,7 @@ async function searchCount(query) {
   return payload.total_count ?? 0;
 }
 
-async function fetchCommitTotal(login) {
+async function fetchContributionTotal(login) {
   const overview = await graphql(
     `
       query ($login: String!) {
@@ -69,7 +69,9 @@ async function fetchCommitTotal(login) {
         query ($login: String!, $from: DateTime!, $to: DateTime!) {
           user(login: $login) {
             contributionsCollection(from: $from, to: $to) {
-              totalCommitContributions
+              contributionCalendar {
+                totalContributions
+              }
             }
           }
         }
@@ -81,7 +83,7 @@ async function fetchCommitTotal(login) {
       },
     );
 
-    total += yearData.user.contributionsCollection.totalCommitContributions;
+    total += yearData.user.contributionsCollection.contributionCalendar.totalContributions;
   }
 
   return total;
@@ -105,11 +107,11 @@ async function fetchStats() {
   );
 
   const user = data.user;
-  const commits = await fetchCommitTotal(USERNAME);
-  const pullRequests = await searchCount(`author:${USERNAME} type:pr state:open`);
+  const contributions = await fetchContributionTotal(USERNAME);
+  const pullRequests = await searchCount(`author:${USERNAME} type:pr`);
 
   return {
-    commits,
+    contributions,
     repositories: user.repositories.totalCount,
     pullRequests,
     followers: user.followers.totalCount,
@@ -120,7 +122,7 @@ function formatNumber(value) {
   return new Intl.NumberFormat("pt-BR").format(value);
 }
 
-function buildSvg({ commits, repositories, pullRequests, followers }) {
+function buildSvg({ contributions, repositories, pullRequests, followers }) {
   return `<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
@@ -150,10 +152,10 @@ function buildSvg({ commits, repositories, pullRequests, followers }) {
       <rect width="36" height="36" rx="8" fill="#121214" stroke="#2A2210" stroke-width="1"/>
       <path d="M18 10 L22 18 L30 19 L24 25 L26 33 L18 29 L10 33 L12 25 L6 19 L14 18 Z" stroke="#92732D" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
     </g>
-    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#92732D">COMMITS</text>
-    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">contribuicoes totais</text>
-    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">${formatNumber(commits)}</text>
-    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">evolucao constante</text>
+    <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#92732D">CONTRIBUICOES</text>
+    <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">no GitHub</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">${formatNumber(contributions)}</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">commits, PRs e reviews</text>
   </g>
 
   <g transform="translate(316, 136)">
@@ -182,7 +184,7 @@ function buildSvg({ commits, repositories, pullRequests, followers }) {
     <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">PULL REQUESTS</text>
     <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">colaboracao ativa</text>
     <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">${formatNumber(pullRequests)}</text>
-    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">PRs abertos</text>
+    <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">PRs criados</text>
   </g>
 
   <g transform="translate(900, 136)">
