@@ -46,6 +46,47 @@ async function searchCount(query) {
   return payload.total_count ?? 0;
 }
 
+async function fetchCommitTotal(login) {
+  const overview = await graphql(
+    `
+      query ($login: String!) {
+        user(login: $login) {
+          contributionsCollection {
+            contributionYears
+          }
+        }
+      }
+    `,
+    { login },
+  );
+
+  const years = overview.user.contributionsCollection.contributionYears;
+  let total = 0;
+
+  for (const year of years) {
+    const yearData = await graphql(
+      `
+        query ($login: String!, $from: DateTime!, $to: DateTime!) {
+          user(login: $login) {
+            contributionsCollection(from: $from, to: $to) {
+              totalCommitContributions
+            }
+          }
+        }
+      `,
+      {
+        login,
+        from: `${year}-01-01T00:00:00Z`,
+        to: `${year}-12-31T23:59:59Z`,
+      },
+    );
+
+    total += yearData.user.contributionsCollection.totalCommitContributions;
+  }
+
+  return total;
+}
+
 async function fetchStats() {
   const data = await graphql(
     `
@@ -57,11 +98,6 @@ async function fetchStats() {
           repositories(ownerAffiliations: OWNER, privacy: PUBLIC) {
             totalCount
           }
-          contributionsCollection {
-            contributionYears {
-              totalCommitContributions
-            }
-          }
         }
       }
     `,
@@ -69,12 +105,8 @@ async function fetchStats() {
   );
 
   const user = data.user;
-  const commits = user.contributionsCollection.contributionYears.reduce(
-    (total, year) => total + year.totalCommitContributions,
-    0,
-  );
-
-  const pullRequests = await searchCount(`author:${USERNAME} type:pr`);
+  const commits = await fetchCommitTotal(USERNAME);
+  const pullRequests = await searchCount(`author:${USERNAME} type:pr state:open`);
 
   return {
     commits,
