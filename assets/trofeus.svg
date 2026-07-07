@@ -17,7 +17,7 @@
 
     <text x="64" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#F2F2F3">Conquistas</text>
     <line x1="64" y1="84" x2="186" y2="84" stroke="#92732D" stroke-width="2.5" stroke-linecap="round"/>
-    <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Marcos e numeros do perfil no GitHub.</text>
+    <text x="64" y="114" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" fill="#6E7076" font-style="italic">Atualizado automaticamente com base no GitHub.</text>
   </g>
 
   <g transform="translate(24, 136)">
@@ -29,7 +29,7 @@
     </g>
     <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#92732D">COMMITS</text>
     <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">contribuicoes totais</text>
-    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">335+</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">294</text>
     <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">evolucao constante</text>
   </g>
 
@@ -43,7 +43,7 @@
     </g>
     <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">REPOSITORIOS</text>
     <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">projetos publicos</text>
-    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">16</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">14</text>
     <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">codigo aberto</text>
   </g>
 
@@ -58,7 +58,7 @@
     </g>
     <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">PULL REQUESTS</text>
     <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">colaboracao ativa</text>
-    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">10</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">5</text>
     <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">PRs abertos</text>
   </g>
 
@@ -74,7 +74,7 @@
     </g>
     <text x="60" y="46" font-family="SFMono-Regular, Consolas, monospace" font-size="10" font-weight="600" letter-spacing="2.5" fill="#ADBAC7">SEGUIDORES</text>
     <text x="60" y="64" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#6E7076">comunidade</text>
-    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">11</text>
+    <text x="16" y="108" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#F2F2F3">10</text>
     <text x="16" y="132" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#6E7076">devs conectados</text>
   </g>
 </svg>
