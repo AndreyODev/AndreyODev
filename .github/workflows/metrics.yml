@@ -23,6 +23,11 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Gerar linguagens
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
