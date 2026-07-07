@@ -47,37 +47,24 @@ async function searchCount(query) {
 }
 
 async function fetchContributionTotal(login) {
-  const currentYear = new Date().getUTCFullYear();
   const overview = await graphql(
     `
-      query ($login: String!, $from: DateTime!, $to: DateTime!) {
+      query ($login: String!) {
         user(login: $login) {
           createdAt
-          contributionsCollection(from: $from, to: $to) {
-            contributionYears
-          }
         }
       }
     `,
-    {
-      login,
-      from: "2008-01-01T00:00:00.000Z",
-      to: `${currentYear + 1}-01-01T00:00:00.000Z`,
-    },
+    { login },
   );
 
   const createdYear = new Date(overview.user.createdAt).getUTCFullYear();
-  const yearsFromApi = overview.user.contributionsCollection.contributionYears;
-
-  const years = new Set(yearsFromApi);
-  for (let year = createdYear; year <= currentYear; year += 1) {
-    years.add(year);
-  }
+  const currentYear = new Date().getUTCFullYear();
 
   let total = 0;
   const breakdown = {};
 
-  for (const year of [...years].sort((a, b) => a - b)) {
+  for (let year = createdYear; year <= currentYear; year += 1) {
     const yearData = await graphql(
       `
         query ($login: String!, $from: DateTime!, $to: DateTime!) {
