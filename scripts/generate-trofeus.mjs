@@ -46,6 +46,37 @@ async function searchCount(query) {
   return payload.total_count ?? 0;
 }
 
+const TIMEZONE = process.env.CONTRIBUTION_TIMEZONE || "America/Sao_Paulo";
+
+function yearBounds(year, timeZone) {
+  const start = new Date(`${year}-01-01T00:00:00`);
+  const end = new Date(`${year + 1}-01-01T00:00:00`);
+
+  const toOffsetIso = (date) => {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23",
+      timeZoneName: "longOffset",
+    }).formatToParts(date);
+
+    const get = (type) => parts.find((part) => part.type === type)?.value;
+    const offset = get("timeZoneName")?.replace("GMT", "") || "+00:00";
+
+    return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}:${get("minute")}:${get("second")}${offset}`;
+  };
+
+  return {
+    from: toOffsetIso(start),
+    to: toOffsetIso(end),
+  };
+}
+
 async function fetchContributionTotal(login) {
   const overview = await graphql(
     `
@@ -65,6 +96,7 @@ async function fetchContributionTotal(login) {
   const breakdown = {};
 
   for (let year = createdYear; year <= currentYear; year += 1) {
+    const { from, to } = yearBounds(year, TIMEZONE);
     const yearData = await graphql(
       `
         query ($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -77,11 +109,7 @@ async function fetchContributionTotal(login) {
           }
         }
       `,
-      {
-        login,
-        from: `${year}-01-01T00:00:00.000Z`,
-        to: `${year + 1}-01-01T00:00:00.000Z`,
-      },
+      { login, from, to },
     );
 
     const count =
@@ -90,7 +118,11 @@ async function fetchContributionTotal(login) {
     total += count;
   }
 
-  console.log(`Contribuicoes por ano para ${login}:`, breakdown, `total=${total}`);
+  console.log(
+    `Contribuicoes por ano para ${login} (${TIMEZONE}):`,
+    breakdown,
+    `total=${total}`,
+  );
   return total;
 }
 
