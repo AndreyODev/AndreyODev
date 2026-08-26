@@ -22,12 +22,12 @@
 
   <rect x="64" y="136" width="1048" height="10" rx="5" fill="#1A1A1C"/>
   <g transform="translate(64, 136)">
-    <rect x="0.00" y="0" width="959.01" height="10" rx="5" fill="#3572A5"/>
-    <rect x="959.01" y="0" width="44.46" height="10" rx="5" fill="#3178c6"/>
-    <rect x="1003.47" y="0" width="24.97" height="10" rx="5" fill="#f1e05a"/>
-    <rect x="1028.45" y="0" width="7.45" height="10" rx="5" fill="#DA5B0B"/>
-    <rect x="1035.89" y="0" width="6.06" height="10" rx="5" fill="#012456"/>
-    <rect x="1041.96" y="0" width="2.63" height="10" rx="5" fill="#f34b7d"/>
+    <rect x="0.00" y="0" width="958.98" height="10" rx="5" fill="#3572A5"/>
+    <rect x="958.98" y="0" width="44.46" height="10" rx="5" fill="#3178c6"/>
+    <rect x="1003.44" y="0" width="24.97" height="10" rx="5" fill="#f1e05a"/>
+    <rect x="1028.41" y="0" width="7.45" height="10" rx="5" fill="#DA5B0B"/>
+    <rect x="1035.86" y="0" width="6.06" height="10" rx="5" fill="#012456"/>
+    <rect x="1041.93" y="0" width="2.63" height="10" rx="5" fill="#f34b7d"/>
   </g>
   
   <circle cx="64" cy="184" r="5" fill="#3572A5"/>
