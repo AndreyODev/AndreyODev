@@ -37,8 +37,10 @@ const CONTRIBUTIONS_QUERY = `
   }
 `;
 
+const originalFetch = globalThis.fetch;
+
 async function fetchContributionsForYear() {
-  const response = await fetch("https://api.github.com/graphql", {
+  const response = await originalFetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${TOKEN}`,
@@ -66,7 +68,6 @@ async function fetchContributionsForYear() {
   return payload;
 }
 
-const originalFetch = globalThis.fetch;
 let cachedContributionsPayload = null;
 
 globalThis.fetch = async (url, options) => {
