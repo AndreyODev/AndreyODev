@@ -22,23 +22,23 @@
 
   <rect x="64" y="136" width="1048" height="10" rx="5" fill="#1A1A1C"/>
   <g transform="translate(64, 136)">
-    <rect x="0.00" y="0" width="948.32" height="10" rx="5" fill="#3572A5"/>
-    <rect x="948.32" y="0" width="43.96" height="10" rx="5" fill="#3178c6"/>
-    <rect x="992.28" y="0" width="36.35" height="10" rx="5" fill="#f1e05a"/>
-    <rect x="1028.63" y="0" width="7.36" height="10" rx="5" fill="#DA5B0B"/>
-    <rect x="1036.00" y="0" width="6.00" height="10" rx="5" fill="#012456"/>
-    <rect x="1041.99" y="0" width="2.60" height="10" rx="5" fill="#f34b7d"/>
+    <rect x="0.00" y="0" width="947.30" height="10" rx="5" fill="#3572A5"/>
+    <rect x="947.30" y="0" width="43.92" height="10" rx="5" fill="#3178c6"/>
+    <rect x="991.21" y="0" width="37.44" height="10" rx="5" fill="#f1e05a"/>
+    <rect x="1028.65" y="0" width="7.36" height="10" rx="5" fill="#DA5B0B"/>
+    <rect x="1036.01" y="0" width="5.99" height="10" rx="5" fill="#012456"/>
+    <rect x="1042.00" y="0" width="2.60" height="10" rx="5" fill="#f34b7d"/>
   </g>
   
   <circle cx="64" cy="184" r="5" fill="#3572A5"/>
   <text x="80" y="188" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">Python</text>
-  <text x="576" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">90,49%</text>
+  <text x="576" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">90,39%</text>
   <circle cx="588" cy="184" r="5" fill="#3178c6"/>
   <text x="604" y="188" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">TypeScript</text>
-  <text x="1100" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">4,20%</text>
+  <text x="1100" y="188" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">4,19%</text>
   <circle cx="64" cy="214" r="5" fill="#f1e05a"/>
   <text x="80" y="218" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">JavaScript</text>
-  <text x="576" y="218" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">3,47%</text>
+  <text x="576" y="218" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">3,57%</text>
   <circle cx="588" cy="214" r="5" fill="#DA5B0B"/>
   <text x="604" y="218" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#F2F2F3">Jupyter Notebook</text>
   <text x="1100" y="218" font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#92732D" text-anchor="end">0,70%</text>
