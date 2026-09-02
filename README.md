@@ -1,17 +1,14 @@
-# Andrey Oliveira
-
 <!--
   Perfil de Andrey Oliveira - AndreyODev
   Identidade visual: preto absoluto (#000000) + card (#0A0A0B) + acento latao (#92732D).
   Conteudo estatico editavel: profile.svg, trofeus.svg e contato.svg.
-  Indicadores dinamicos: linguagens.svg, Pac-Man e trofeus.svg (gerados automaticamente pelo GitHub Action).
+  Indicadores dinamicos: Pac-Man e trofeus.svg (gerados automaticamente pelo GitHub Action).
 -->
 
-<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 <!-- HERO -->
-<img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Full Stack" />
+<img src="./assets/profile.svg" width="100%" alt="Andrey Oliveira - Desenvolvedor Backend" />
 
 <!-- ATIVIDADE: Pac-Man gerado na main em assets/atividade-pacman.svg -->
 <img src="./assets/atividade-pacman.svg" width="100%" alt="Pac-Man comendo o calendario de contribuicoes de 2026" />
@@ -31,4 +28,3 @@
 <img src="https://komarev.com/ghpvc/?username=AndreyODev&color=92732D&style=flat-square&label=visitas&labelColor=000000" alt="Visitas" />
 
 </div>
-<!-- markdownlint-enable MD033 -->
