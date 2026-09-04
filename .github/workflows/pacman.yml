@@ -44,8 +44,8 @@ jobs:
 
       - name: Commit e push do asset
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Andrey Oliveira"
+          git config user.email "andreyoliveira72005@gmail.com"
           git add assets/atividade-pacman.svg
           if git diff --staged --quiet; then
             echo "Sem mudancas no asset."
